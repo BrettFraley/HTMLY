@@ -1,0 +1,31 @@
+
+body {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    background-color: #f8f9fa;
+    color: #212529;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dark-mode {
+    background-color: #1e1e2f;
+    color: #c9d1d9;
+}
+.btn-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 125px;
+}
+.header {
+    margin-top: 50px;
+    text-align: center;
+    color: #0d6efd;
+}
+.feature-list {
+    margin-top: 30px;
+}
+.feature-list h2 {
+    color: #20c997;
+}
+.feature-list ul li {
+    margin-bottom: 10px;
+}
