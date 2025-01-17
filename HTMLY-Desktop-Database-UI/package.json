@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "index.html",
   "scripts": {
+    "bootstrapcss": "cp -r node_modules/bootstrap/dist bootstrap/",
     "dev": "~/nwjs-sdk/nwjs-sdk-v0.93.0-linux-x64/nw .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +12,7 @@
   "license": "ISC",
   "description": "Database tool for working on HTMLY itself",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "sqlite3": "^5.1.7"
   }
 }
