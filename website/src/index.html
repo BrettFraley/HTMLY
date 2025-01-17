@@ -34,7 +34,7 @@
             <p>HTMLY is a SQLite-driven code and content-as-data static site generator. It updates connected clients with partial changes over SSE or WebSockets, ensuring dynamic and efficient updates without full-page reloads.</p>
         </section>
         <hr>
-    </div>
+    </div> <!-- container-->
 
     <div class="container articles">
         <h3>Principle Idea</h3>
@@ -44,7 +44,7 @@
         The project aims to define a spec, various implementations, and the the core features that make up
         a website or software application driven by HTMLY.</p>
 
-        <p>The forseen specification involves the combination nation of static site generation, server side rendering,
+        <p>The forseen specification involves the combination of static site generation, server side rendering,
         and composable blocks of dynamic content stored using SQLite.</p>
 
         <p>On top of defining HTMLY as an actual software spec, we are building HTMLY Desktop that
@@ -57,12 +57,43 @@
         <ul>
             <li>All markup, content, and code is in a SQLite database.</li>
             <li>Websitess, apps, and other software can be built from sets of database schemas and queries.</li>
-            <li>Changes to data write triggers content blocks to be regenerated, sent to users,
+            <li>Changes to data triggers content blocks to be regenerated, sent to users,
                 and only the changed content blocks are reloaded.</li>
             <li>Dynamic content is updated and sent to users via SSE or websockets.</li>
         </ul>
 
-    </div>
+    </div> <!-- container -->
+    <hr>
+
+    <div class="container articles">
+        <h3>Notes: Jan 17, 2025</h3>
+
+        <p>We've realized that HTMLY has two main stages of research and development.
+           The first is the spec itself as an idea and the second is initial and future
+           implementations of HTMLY driven or inspired applications using different types
+           of stacks (meaning use of different database engines or configurations, programming languages,
+           integrations with web frameworks, and the testing of these implementations).
+        </p>
+
+        <p>There is a third major piece to our development, which mentioned above, is HTMLY-Desktop.
+            A variety of considerations have gone into starting development on HTMLY-Desktop, and while NW.js
+            and other multiplatform desktop development tools have been considered, we are initially choosing Kotlin
+            as our development language.
+            <strong>NOTE: </strong>We want to experiment with using bash, Crystal, Go, and other languages
+            for the fastest watching of database changes, server side rendering and SSE servers, but we realize that
+            this may be left up to users to experiment with themselves and make those decisions based on their preference
+            and requirements.
+        </p>
+
+        <h4>Current Work / Goals</h4>
+
+        <ul>
+            <li>Continued R&D on the idea(s) and creating the initial spec definition of HTMLY.</li>
+            <li>Gradually develop HTMlY-Desktop.</li>
+            <li>Build example websites, documentation, and tutorials.</li>
+        </ul>
+
+    </div> <!-- container -->
     <hr>
 
     <div class="container">
