@@ -8,7 +8,44 @@
 <body>
   <div class="container">
     <h1>HTMLY-Desktop SQLite Viewer ....</h1>
-    <button onclick="loadDatabase()">Load Database</button>
+
+
+    <div class="row">
+      <h2>TODO</h2>
+      <ul>
+        <li>Create a new DB file with name and dir type</li>
+      </ul>
+    </div>
+
+    <h2>TESTS</h2>
+    <button id="newMemoryDatabaseTestButton">New Memory Database Test</button>
+
+    <div class="mb-3">
+      <label for="memorydb-insert-test" class="form-label">Key to repeat..</label>
+      <input type="text" class="form-control" id="memorydb-insert-test" placeholder="...">
+    </div>
+
+    <div class="mb-3">
+        <p>Create a new table with name and location choice</p>
+        <label for="new-db-name-test" class="form-label">New DB Name</label>
+        <input type="text" class="form-control" id="new-db-name-test" placeholder="...">
+
+        <select id="new-db-location" class="form-select" aria-label="Default select example">
+            <option selected value="htmly-internals">HTMLY Internals</option>
+            <option value="temp-databases">Temp Databases</option>
+            <option value="perm-databses">Perm Databases</option>
+            <option value="user-databases">User / My Databases</option>
+        </select>
+
+      </div>
+
+
+
+
+
+
+    <button id="create-new-button">New DB</button>
+
     <div id="output"></div>
   </div>
 
