@@ -2,6 +2,23 @@
   "name": "htmly-desktop-database-ui",
   "version": "0.0.1",
   "main": "index.html",
+  "window": {
+    "show": true,
+    "frame": true,
+    "toolbar": true,
+    "always_on_top": true,
+    "fullscreen": false,
+    "show_in_taskbar": true,
+    "transparent": false,
+    "icon": "app.icns",
+    "width": 800,
+    "height": 500,
+    "position": "mouse",
+    "min_width": 400,
+    "min_height": 200,
+    "max_width": 800,
+    "max_height": 600
+  },
   "scripts": {
     "bootstrapcss": "cp -r node_modules/bootstrap/dist bootstrap/",
     "dev": "~/nwjs-sdk/nwjs-sdk-v0.93.0-linux-x64/nw .",
